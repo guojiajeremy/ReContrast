@@ -16,7 +16,7 @@ pip install -r requirements.txt
 Experiments are conducted on NVIDIA GeForce RTX 3090 (24GB). Same GPU and package version are recommended. 
 
 ## 2. Prepare Datasets
-Noted that `../` is the upper directory of ReContrastAD. It is where we keep all the datasets by default.
+Noted that `../` is the upper directory of `ReContrast`. It is where we keep all the datasets by default.
 You can also alter it according to your need, just remember to modify the `train_path` and `test_path` in the code. 
 
 ### MVTec AD
