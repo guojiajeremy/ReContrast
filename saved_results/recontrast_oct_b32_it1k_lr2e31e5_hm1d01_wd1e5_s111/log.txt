@@ -1,0 +1,13 @@
+cuda:0
+OCT2017
+train image number:26315
+test image number:1000
+iter [249/1000], loss:0.5620
+AUROC:0.9865, F1:0.9667, ACC:0.9500
+iter [499/1000], loss:0.4163
+AUROC:0.9946, F1:0.9812, ACC:0.9720
+iter [749/1000], loss:0.3548
+AUROC:0.9944, F1:0.9826, ACC:0.9740
+iter [999/1000], loss:0.3070
+AUROC:0.9960, F1:0.9853, ACC:0.9780
+

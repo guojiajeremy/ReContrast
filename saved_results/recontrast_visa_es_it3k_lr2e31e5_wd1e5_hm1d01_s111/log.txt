@@ -1,0 +1,1061 @@
+cuda:2
+candle
+train image number:900
+test image number:200
+iter [57/3000], loss:0.8934
+iter [114/3000], loss:0.4587
+iter [171/3000], loss:0.2809
+iter [228/3000], loss:0.2311
+Pixel Auroc:0.986, Sample Auroc:0.853, Pixel Aupro:0.933
+iter [285/3000], loss:0.2262
+iter [342/3000], loss:0.2353
+iter [399/3000], loss:0.2361
+iter [456/3000], loss:0.2472
+Pixel Auroc:0.988, Sample Auroc:0.864, Pixel Aupro:0.937
+iter [513/3000], loss:0.2357
+iter [570/3000], loss:0.2332
+iter [627/3000], loss:0.2313
+iter [684/3000], loss:0.2886
+iter [741/3000], loss:0.2418
+Pixel Auroc:0.988, Sample Auroc:0.871, Pixel Aupro:0.938
+iter [798/3000], loss:0.2323
+iter [855/3000], loss:0.2295
+iter [912/3000], loss:0.2274
+iter [969/3000], loss:0.2256
+Pixel Auroc:0.989, Sample Auroc:0.911, Pixel Aupro:0.941
+iter [1026/3000], loss:0.2466
+iter [1083/3000], loss:0.2428
+iter [1140/3000], loss:0.2242
+iter [1197/3000], loss:0.2202
+Pixel Auroc:0.990, Sample Auroc:0.945, Pixel Aupro:0.945
+iter [1254/3000], loss:0.2186
+iter [1311/3000], loss:0.2166
+iter [1368/3000], loss:0.2151
+iter [1425/3000], loss:0.2400
+iter [1482/3000], loss:0.2126
+Pixel Auroc:0.990, Sample Auroc:0.960, Pixel Aupro:0.947
+iter [1539/3000], loss:0.2173
+iter [1596/3000], loss:0.2202
+iter [1653/3000], loss:0.2078
+iter [1710/3000], loss:0.2248
+Pixel Auroc:0.991, Sample Auroc:0.971, Pixel Aupro:0.949
+iter [1767/3000], loss:0.2070
+iter [1824/3000], loss:0.2035
+iter [1881/3000], loss:0.2077
+iter [1938/3000], loss:0.2003
+iter [1995/3000], loss:0.1996
+Pixel Auroc:0.991, Sample Auroc:0.975, Pixel Aupro:0.949
+iter [2052/3000], loss:0.2128
+iter [2109/3000], loss:0.2063
+iter [2166/3000], loss:0.1973
+iter [2223/3000], loss:0.1960
+Pixel Auroc:0.991, Sample Auroc:0.973, Pixel Aupro:0.95
+iter [2280/3000], loss:0.1944
+iter [2337/3000], loss:0.2390
+iter [2394/3000], loss:0.1941
+iter [2451/3000], loss:0.1902
+Pixel Auroc:0.991, Sample Auroc:0.972, Pixel Aupro:0.949
+iter [2508/3000], loss:0.1888
+iter [2565/3000], loss:0.1884
+iter [2622/3000], loss:0.1880
+iter [2679/3000], loss:0.1864
+iter [2736/3000], loss:0.1857
+Pixel Auroc:0.991, Sample Auroc:0.974, Pixel Aupro:0.949
+iter [2793/3000], loss:0.2450
+iter [2850/3000], loss:0.2052
+iter [2907/3000], loss:0.1887
+iter [2964/3000], loss:0.1837
+Pixel Auroc:0.992, Sample Auroc:0.972, Pixel Aupro:0.948
+iter [3000/3000], loss:0.1814
+capsules
+train image number:542
+test image number:160
+iter [34/3000], loss:1.1405
+iter [68/3000], loss:0.8452
+iter [102/3000], loss:0.6979
+iter [136/3000], loss:0.5837
+iter [170/3000], loss:0.5005
+iter [204/3000], loss:0.4581
+iter [238/3000], loss:0.4312
+Pixel Auroc:0.990, Sample Auroc:0.878, Pixel Aupro:0.927
+iter [272/3000], loss:0.4220
+iter [306/3000], loss:0.4204
+iter [340/3000], loss:0.4167
+iter [374/3000], loss:0.4149
+iter [408/3000], loss:0.4099
+iter [442/3000], loss:0.4077
+iter [476/3000], loss:0.4058
+Pixel Auroc:0.994, Sample Auroc:0.920, Pixel Aupro:0.959
+iter [510/3000], loss:0.4034
+iter [544/3000], loss:0.4023
+iter [578/3000], loss:0.3987
+iter [612/3000], loss:0.3934
+iter [646/3000], loss:0.3912
+iter [680/3000], loss:0.3871
+iter [714/3000], loss:0.3924
+iter [748/3000], loss:0.3905
+Pixel Auroc:0.994, Sample Auroc:0.919, Pixel Aupro:0.959
+iter [782/3000], loss:0.3810
+iter [816/3000], loss:0.3801
+iter [850/3000], loss:0.3762
+iter [884/3000], loss:0.3750
+iter [918/3000], loss:0.3736
+iter [952/3000], loss:0.3703
+iter [986/3000], loss:0.3695
+Pixel Auroc:0.995, Sample Auroc:0.930, Pixel Aupro:0.965
+iter [1020/3000], loss:0.3649
+iter [1054/3000], loss:0.3615
+iter [1088/3000], loss:0.3610
+iter [1122/3000], loss:0.3634
+iter [1156/3000], loss:0.3561
+iter [1190/3000], loss:0.3596
+iter [1224/3000], loss:0.3528
+Pixel Auroc:0.995, Sample Auroc:0.933, Pixel Aupro:0.956
+iter [1258/3000], loss:0.3508
+iter [1292/3000], loss:0.3493
+iter [1326/3000], loss:0.3470
+iter [1360/3000], loss:0.3454
+iter [1394/3000], loss:0.3501
+iter [1428/3000], loss:0.3394
+iter [1462/3000], loss:0.3376
+iter [1496/3000], loss:0.3395
+Pixel Auroc:0.995, Sample Auroc:0.934, Pixel Aupro:0.964
+iter [1530/3000], loss:0.3563
+iter [1564/3000], loss:0.3359
+iter [1598/3000], loss:0.3307
+iter [1632/3000], loss:0.3482
+iter [1666/3000], loss:0.3362
+iter [1700/3000], loss:0.3317
+iter [1734/3000], loss:0.3286
+Pixel Auroc:0.995, Sample Auroc:0.937, Pixel Aupro:0.955
+iter [1768/3000], loss:0.3253
+iter [1802/3000], loss:0.3234
+iter [1836/3000], loss:0.3255
+iter [1870/3000], loss:0.3207
+iter [1904/3000], loss:0.3198
+iter [1938/3000], loss:0.3177
+iter [1972/3000], loss:0.3253
+Pixel Auroc:0.995, Sample Auroc:0.939, Pixel Aupro:0.952
+iter [2006/3000], loss:0.3235
+iter [2040/3000], loss:0.3137
+iter [2074/3000], loss:0.3745
+iter [2108/3000], loss:0.3267
+iter [2142/3000], loss:0.3130
+iter [2176/3000], loss:0.3100
+iter [2210/3000], loss:0.3096
+iter [2244/3000], loss:0.3168
+Pixel Auroc:0.995, Sample Auroc:0.937, Pixel Aupro:0.961
+iter [2278/3000], loss:0.3107
+iter [2312/3000], loss:0.3069
+iter [2346/3000], loss:0.3068
+iter [2380/3000], loss:0.3095
+iter [2414/3000], loss:0.3059
+iter [2448/3000], loss:0.3038
+iter [2482/3000], loss:0.3146
+Pixel Auroc:0.995, Sample Auroc:0.937, Pixel Aupro:0.954
+iter [2516/3000], loss:0.3065
+iter [2550/3000], loss:0.3003
+iter [2584/3000], loss:0.2996
+iter [2618/3000], loss:0.3065
+iter [2652/3000], loss:0.2997
+iter [2686/3000], loss:0.2950
+iter [2720/3000], loss:0.2967
+Pixel Auroc:0.995, Sample Auroc:0.942, Pixel Aupro:0.962
+iter [2754/3000], loss:0.2963
+iter [2788/3000], loss:0.2945
+iter [2822/3000], loss:0.2950
+iter [2856/3000], loss:0.2963
+iter [2890/3000], loss:0.2985
+iter [2924/3000], loss:0.2923
+iter [2958/3000], loss:0.2919
+iter [2992/3000], loss:0.2929
+Pixel Auroc:0.995, Sample Auroc:0.935, Pixel Aupro:0.945
+iter [3000/3000], loss:0.2883
+cashew
+train image number:450
+test image number:150
+iter [29/3000], loss:0.9099
+iter [58/3000], loss:0.5082
+iter [87/3000], loss:0.4326
+iter [116/3000], loss:0.3847
+iter [145/3000], loss:0.3544
+iter [174/3000], loss:0.3387
+iter [203/3000], loss:0.3325
+iter [232/3000], loss:0.3322
+Pixel Auroc:0.937, Sample Auroc:0.906, Pixel Aupro:0.828
+iter [261/3000], loss:0.3353
+iter [290/3000], loss:0.3376
+iter [319/3000], loss:0.3407
+iter [348/3000], loss:0.3407
+iter [377/3000], loss:0.3399
+iter [406/3000], loss:0.3390
+iter [435/3000], loss:0.3376
+iter [464/3000], loss:0.3354
+iter [493/3000], loss:0.3330
+Pixel Auroc:0.957, Sample Auroc:0.947, Pixel Aupro:0.866
+iter [522/3000], loss:0.3309
+iter [551/3000], loss:0.3290
+iter [580/3000], loss:0.3269
+iter [609/3000], loss:0.3253
+iter [638/3000], loss:0.3224
+iter [667/3000], loss:0.3203
+iter [696/3000], loss:0.3188
+iter [725/3000], loss:0.3166
+Pixel Auroc:0.968, Sample Auroc:0.966, Pixel Aupro:0.903
+iter [754/3000], loss:0.3136
+iter [783/3000], loss:0.3121
+iter [812/3000], loss:0.3084
+iter [841/3000], loss:0.3046
+iter [870/3000], loss:0.3017
+iter [899/3000], loss:0.2988
+iter [928/3000], loss:0.2969
+iter [957/3000], loss:0.2942
+iter [986/3000], loss:0.2910
+Pixel Auroc:0.970, Sample Auroc:0.939, Pixel Aupro:0.88
+iter [1015/3000], loss:0.3798
+iter [1044/3000], loss:0.3186
+iter [1073/3000], loss:0.3009
+iter [1102/3000], loss:0.2942
+iter [1131/3000], loss:0.2896
+iter [1160/3000], loss:0.2864
+iter [1189/3000], loss:0.2833
+iter [1218/3000], loss:0.2811
+iter [1247/3000], loss:0.2787
+Pixel Auroc:0.979, Sample Auroc:0.968, Pixel Aupro:0.943
+iter [1276/3000], loss:0.2774
+iter [1305/3000], loss:0.2741
+iter [1334/3000], loss:0.2727
+iter [1363/3000], loss:0.2710
+iter [1392/3000], loss:0.2691
+iter [1421/3000], loss:0.2671
+iter [1450/3000], loss:0.2650
+iter [1479/3000], loss:0.2663
+Pixel Auroc:0.979, Sample Auroc:0.969, Pixel Aupro:0.941
+iter [1508/3000], loss:0.2627
+iter [1537/3000], loss:0.2591
+iter [1566/3000], loss:0.2561
+iter [1595/3000], loss:0.2567
+iter [1624/3000], loss:0.2574
+iter [1653/3000], loss:0.2524
+iter [1682/3000], loss:0.2500
+iter [1711/3000], loss:0.2473
+iter [1740/3000], loss:0.2465
+Pixel Auroc:0.977, Sample Auroc:0.975, Pixel Aupro:0.944
+iter [1769/3000], loss:0.2460
+iter [1798/3000], loss:0.2423
+iter [1827/3000], loss:0.2409
+iter [1856/3000], loss:0.2416
+iter [1885/3000], loss:0.2396
+iter [1914/3000], loss:0.2368
+iter [1943/3000], loss:0.2354
+iter [1972/3000], loss:0.2329
+Pixel Auroc:0.977, Sample Auroc:0.974, Pixel Aupro:0.947
+iter [2001/3000], loss:0.2318
+iter [2030/3000], loss:0.2340
+iter [2059/3000], loss:0.2313
+iter [2088/3000], loss:0.2287
+iter [2117/3000], loss:0.2271
+iter [2146/3000], loss:0.2259
+iter [2175/3000], loss:0.2245
+iter [2204/3000], loss:0.2234
+iter [2233/3000], loss:0.2218
+Pixel Auroc:0.977, Sample Auroc:0.975, Pixel Aupro:0.947
+iter [2262/3000], loss:0.2203
+iter [2291/3000], loss:0.2197
+iter [2320/3000], loss:0.2190
+iter [2349/3000], loss:0.2223
+iter [2378/3000], loss:0.2209
+iter [2407/3000], loss:0.2176
+iter [2436/3000], loss:0.2175
+iter [2465/3000], loss:0.2128
+iter [2494/3000], loss:0.2115
+Pixel Auroc:0.979, Sample Auroc:0.975, Pixel Aupro:0.952
+iter [2523/3000], loss:0.2118
+iter [2552/3000], loss:0.2096
+iter [2581/3000], loss:0.2078
+iter [2610/3000], loss:0.2070
+iter [2639/3000], loss:0.2078
+iter [2668/3000], loss:0.2067
+iter [2697/3000], loss:0.2055
+iter [2726/3000], loss:0.2065
+Pixel Auroc:0.977, Sample Auroc:0.979, Pixel Aupro:0.946
+iter [2755/3000], loss:0.2044
+iter [2784/3000], loss:0.2023
+iter [2813/3000], loss:0.2011
+iter [2842/3000], loss:0.2012
+iter [2871/3000], loss:0.1999
+iter [2900/3000], loss:0.2006
+iter [2929/3000], loss:0.1988
+iter [2958/3000], loss:0.2013
+iter [2987/3000], loss:0.1988
+Pixel Auroc:0.974, Sample Auroc:0.981, Pixel Aupro:0.943
+iter [3000/3000], loss:0.1989
+chewinggum
+train image number:453
+test image number:150
+iter [29/3000], loss:1.0828
+iter [58/3000], loss:0.7714
+iter [87/3000], loss:0.7067
+iter [116/3000], loss:0.6363
+iter [145/3000], loss:0.5829
+iter [174/3000], loss:0.5548
+iter [203/3000], loss:0.5427
+iter [232/3000], loss:0.5421
+Pixel Auroc:0.941, Sample Auroc:0.921, Pixel Aupro:0.736
+iter [261/3000], loss:0.5461
+iter [290/3000], loss:0.5522
+iter [319/3000], loss:0.5588
+iter [348/3000], loss:0.5613
+iter [377/3000], loss:0.5627
+iter [406/3000], loss:0.5636
+iter [435/3000], loss:0.5640
+iter [464/3000], loss:0.5640
+iter [493/3000], loss:0.5635
+Pixel Auroc:0.950, Sample Auroc:0.949, Pixel Aupro:0.765
+iter [522/3000], loss:0.5624
+iter [551/3000], loss:0.5607
+iter [580/3000], loss:0.5580
+iter [609/3000], loss:0.5551
+iter [638/3000], loss:0.5509
+iter [667/3000], loss:0.5461
+iter [696/3000], loss:0.5409
+iter [725/3000], loss:0.5359
+Pixel Auroc:0.966, Sample Auroc:0.971, Pixel Aupro:0.82
+iter [754/3000], loss:0.5298
+iter [783/3000], loss:0.5237
+iter [812/3000], loss:0.5184
+iter [841/3000], loss:0.5117
+iter [870/3000], loss:0.6078
+iter [899/3000], loss:0.5625
+iter [928/3000], loss:0.5242
+iter [957/3000], loss:0.5103
+iter [986/3000], loss:0.5018
+Pixel Auroc:0.974, Sample Auroc:0.986, Pixel Aupro:0.853
+iter [1015/3000], loss:0.4962
+iter [1044/3000], loss:0.4900
+iter [1073/3000], loss:0.4818
+iter [1102/3000], loss:0.4757
+iter [1131/3000], loss:0.4905
+iter [1160/3000], loss:0.4689
+iter [1189/3000], loss:0.4608
+iter [1218/3000], loss:0.4553
+iter [1247/3000], loss:0.4506
+Pixel Auroc:0.975, Sample Auroc:0.989, Pixel Aupro:0.861
+iter [1276/3000], loss:0.4619
+iter [1305/3000], loss:0.4479
+iter [1334/3000], loss:0.4380
+iter [1363/3000], loss:0.4328
+iter [1392/3000], loss:0.4284
+iter [1421/3000], loss:0.4242
+iter [1450/3000], loss:0.4201
+iter [1479/3000], loss:0.4167
+Pixel Auroc:0.976, Sample Auroc:0.991, Pixel Aupro:0.864
+iter [1508/3000], loss:0.4125
+iter [1537/3000], loss:0.4088
+iter [1566/3000], loss:0.4054
+iter [1595/3000], loss:0.4017
+iter [1624/3000], loss:0.3983
+iter [1653/3000], loss:0.3944
+iter [1682/3000], loss:0.4185
+iter [1711/3000], loss:0.3961
+iter [1740/3000], loss:0.3860
+Pixel Auroc:0.976, Sample Auroc:0.992, Pixel Aupro:0.864
+iter [1769/3000], loss:0.3823
+iter [1798/3000], loss:0.3793
+iter [1827/3000], loss:0.3768
+iter [1856/3000], loss:0.3737
+iter [1885/3000], loss:0.4230
+iter [1914/3000], loss:0.4073
+iter [1943/3000], loss:0.3765
+iter [1972/3000], loss:0.3684
+Pixel Auroc:0.977, Sample Auroc:0.990, Pixel Aupro:0.871
+iter [2001/3000], loss:0.3644
+iter [2030/3000], loss:0.3609
+iter [2059/3000], loss:0.3590
+iter [2088/3000], loss:0.3558
+iter [2117/3000], loss:0.3534
+iter [2146/3000], loss:0.3510
+iter [2175/3000], loss:0.3490
+iter [2204/3000], loss:0.3466
+iter [2233/3000], loss:0.3450
+Pixel Auroc:0.977, Sample Auroc:0.993, Pixel Aupro:0.872
+iter [2262/3000], loss:0.3466
+iter [2291/3000], loss:0.3467
+iter [2320/3000], loss:0.3464
+iter [2349/3000], loss:0.3379
+iter [2378/3000], loss:0.3350
+iter [2407/3000], loss:0.3330
+iter [2436/3000], loss:0.3307
+iter [2465/3000], loss:0.3288
+iter [2494/3000], loss:0.3271
+Pixel Auroc:0.976, Sample Auroc:0.991, Pixel Aupro:0.868
+iter [2523/3000], loss:0.3255
+iter [2552/3000], loss:0.3234
+iter [2581/3000], loss:0.3223
+iter [2610/3000], loss:0.3212
+iter [2639/3000], loss:0.3674
+iter [2668/3000], loss:0.3749
+iter [2697/3000], loss:0.3341
+iter [2726/3000], loss:0.3240
+Pixel Auroc:0.978, Sample Auroc:0.991, Pixel Aupro:0.874
+iter [2755/3000], loss:0.3191
+iter [2784/3000], loss:0.3164
+iter [2813/3000], loss:0.3141
+iter [2842/3000], loss:0.3131
+iter [2871/3000], loss:0.3112
+iter [2900/3000], loss:0.3087
+iter [2929/3000], loss:0.3070
+iter [2958/3000], loss:0.3051
+iter [2987/3000], loss:0.3036
+Pixel Auroc:0.976, Sample Auroc:0.993, Pixel Aupro:0.866
+iter [3000/3000], loss:0.3024
+fryum
+train image number:450
+test image number:150
+iter [29/3000], loss:1.0776
+iter [58/3000], loss:0.7144
+iter [87/3000], loss:0.6332
+iter [116/3000], loss:0.5664
+iter [145/3000], loss:0.5025
+iter [174/3000], loss:0.4351
+iter [203/3000], loss:0.3857
+iter [232/3000], loss:0.3604
+Pixel Auroc:0.942, Sample Auroc:0.951, Pixel Aupro:0.828
+iter [261/3000], loss:0.3465
+iter [290/3000], loss:0.3410
+iter [319/3000], loss:0.3409
+iter [348/3000], loss:0.3388
+iter [377/3000], loss:0.3383
+iter [406/3000], loss:0.3359
+iter [435/3000], loss:0.3360
+iter [464/3000], loss:0.3337
+iter [493/3000], loss:0.3345
+Pixel Auroc:0.923, Sample Auroc:0.953, Pixel Aupro:0.78
+iter [522/3000], loss:0.3320
+iter [551/3000], loss:0.3307
+iter [580/3000], loss:0.3312
+iter [609/3000], loss:0.3292
+iter [638/3000], loss:0.3279
+iter [667/3000], loss:0.3264
+iter [696/3000], loss:0.3234
+iter [725/3000], loss:0.3237
+Pixel Auroc:0.933, Sample Auroc:0.956, Pixel Aupro:0.799
+iter [754/3000], loss:0.3345
+iter [783/3000], loss:0.3216
+iter [812/3000], loss:0.3175
+iter [841/3000], loss:0.3154
+iter [870/3000], loss:0.3131
+iter [899/3000], loss:0.3133
+iter [928/3000], loss:0.3113
+iter [957/3000], loss:0.3100
+iter [986/3000], loss:0.3072
+Pixel Auroc:0.922, Sample Auroc:0.964, Pixel Aupro:0.787
+iter [1015/3000], loss:0.3372
+iter [1044/3000], loss:0.3098
+iter [1073/3000], loss:0.3053
+iter [1102/3000], loss:0.3030
+iter [1131/3000], loss:0.3019
+iter [1160/3000], loss:0.2992
+iter [1189/3000], loss:0.3012
+iter [1218/3000], loss:0.2993
+iter [1247/3000], loss:0.2948
+Pixel Auroc:0.924, Sample Auroc:0.976, Pixel Aupro:0.795
+iter [1276/3000], loss:0.2934
+iter [1305/3000], loss:0.2927
+iter [1334/3000], loss:0.2912
+iter [1363/3000], loss:0.2886
+iter [1392/3000], loss:0.2934
+iter [1421/3000], loss:0.2906
+iter [1450/3000], loss:0.2884
+iter [1479/3000], loss:0.2856
+Pixel Auroc:0.929, Sample Auroc:0.974, Pixel Aupro:0.808
+iter [1508/3000], loss:0.2833
+iter [1537/3000], loss:0.2928
+iter [1566/3000], loss:0.2812
+iter [1595/3000], loss:0.2778
+iter [1624/3000], loss:0.2791
+iter [1653/3000], loss:0.2782
+iter [1682/3000], loss:0.2747
+iter [1711/3000], loss:0.2734
+iter [1740/3000], loss:0.2736
+Pixel Auroc:0.934, Sample Auroc:0.970, Pixel Aupro:0.819
+iter [1769/3000], loss:0.2726
+iter [1798/3000], loss:0.2721
+iter [1827/3000], loss:0.2765
+iter [1856/3000], loss:0.2701
+iter [1885/3000], loss:0.2669
+iter [1914/3000], loss:0.2661
+iter [1943/3000], loss:0.2648
+iter [1972/3000], loss:0.2648
+Pixel Auroc:0.934, Sample Auroc:0.971, Pixel Aupro:0.821
+iter [2001/3000], loss:0.2932
+iter [2030/3000], loss:0.2658
+iter [2059/3000], loss:0.2588
+iter [2088/3000], loss:0.2590
+iter [2117/3000], loss:0.2584
+iter [2146/3000], loss:0.6830
+iter [2175/3000], loss:0.5039
+iter [2204/3000], loss:0.4255
+iter [2233/3000], loss:0.3918
+Pixel Auroc:0.898, Sample Auroc:0.945, Pixel Aupro:0.728
+iter [2262/3000], loss:0.3721
+iter [2291/3000], loss:0.3580
+iter [2320/3000], loss:0.3493
+iter [2349/3000], loss:0.3412
+iter [2378/3000], loss:0.3366
+iter [2407/3000], loss:0.3293
+iter [2436/3000], loss:0.3225
+iter [2465/3000], loss:0.3169
+iter [2494/3000], loss:0.3146
+Pixel Auroc:0.905, Sample Auroc:0.974, Pixel Aupro:0.768
+iter [2523/3000], loss:0.3098
+iter [2552/3000], loss:0.3047
+iter [2581/3000], loss:0.3006
+iter [2610/3000], loss:0.3535
+iter [2639/3000], loss:0.3084
+iter [2668/3000], loss:0.2973
+iter [2697/3000], loss:0.2951
+iter [2726/3000], loss:0.2911
+Pixel Auroc:0.919, Sample Auroc:0.977, Pixel Aupro:0.781
+iter [2755/3000], loss:0.2911
+iter [2784/3000], loss:0.2852
+iter [2813/3000], loss:0.2848
+iter [2842/3000], loss:0.2805
+iter [2871/3000], loss:0.2780
+iter [2900/3000], loss:0.2914
+iter [2929/3000], loss:0.2755
+iter [2958/3000], loss:0.2717
+iter [2987/3000], loss:0.2774
+Pixel Auroc:0.920, Sample Auroc:0.976, Pixel Aupro:0.791
+iter [3000/3000], loss:0.2752
+macaroni1
+train image number:900
+test image number:200
+iter [57/3000], loss:0.8676
+iter [114/3000], loss:0.4676
+iter [171/3000], loss:0.3320
+iter [228/3000], loss:0.2854
+Pixel Auroc:0.975, Sample Auroc:0.831, Pixel Aupro:0.867
+iter [285/3000], loss:0.2769
+iter [342/3000], loss:0.2797
+iter [399/3000], loss:0.2805
+iter [456/3000], loss:0.2778
+Pixel Auroc:0.982, Sample Auroc:0.886, Pixel Aupro:0.89
+iter [513/3000], loss:0.2757
+iter [570/3000], loss:0.2816
+iter [627/3000], loss:0.2702
+iter [684/3000], loss:0.2653
+iter [741/3000], loss:0.2612
+Pixel Auroc:0.983, Sample Auroc:0.918, Pixel Aupro:0.898
+iter [798/3000], loss:0.2579
+iter [855/3000], loss:0.2602
+iter [912/3000], loss:0.2522
+iter [969/3000], loss:0.2492
+Pixel Auroc:0.984, Sample Auroc:0.941, Pixel Aupro:0.907
+iter [1026/3000], loss:0.2478
+iter [1083/3000], loss:0.2414
+iter [1140/3000], loss:0.2417
+iter [1197/3000], loss:0.2469
+Pixel Auroc:0.986, Sample Auroc:0.953, Pixel Aupro:0.917
+iter [1254/3000], loss:0.2376
+iter [1311/3000], loss:0.2319
+iter [1368/3000], loss:0.2288
+iter [1425/3000], loss:0.2278
+iter [1482/3000], loss:0.2278
+Pixel Auroc:0.988, Sample Auroc:0.966, Pixel Aupro:0.923
+iter [1539/3000], loss:0.2256
+iter [1596/3000], loss:0.2205
+iter [1653/3000], loss:0.2196
+iter [1710/3000], loss:0.2166
+Pixel Auroc:0.989, Sample Auroc:0.974, Pixel Aupro:0.929
+iter [1767/3000], loss:0.2152
+iter [1824/3000], loss:0.2305
+iter [1881/3000], loss:0.2217
+iter [1938/3000], loss:0.2114
+iter [1995/3000], loss:0.2131
+Pixel Auroc:0.990, Sample Auroc:0.982, Pixel Aupro:0.937
+iter [2052/3000], loss:0.2105
+iter [2109/3000], loss:0.2131
+iter [2166/3000], loss:0.2056
+iter [2223/3000], loss:0.2126
+Pixel Auroc:0.989, Sample Auroc:0.985, Pixel Aupro:0.934
+iter [2280/3000], loss:0.2026
+iter [2337/3000], loss:0.1987
+iter [2394/3000], loss:0.2000
+iter [2451/3000], loss:0.2007
+Pixel Auroc:0.989, Sample Auroc:0.986, Pixel Aupro:0.931
+iter [2508/3000], loss:0.1982
+iter [2565/3000], loss:0.1946
+iter [2622/3000], loss:0.1978
+iter [2679/3000], loss:0.1919
+iter [2736/3000], loss:0.1915
+Pixel Auroc:0.989, Sample Auroc:0.988, Pixel Aupro:0.931
+iter [2793/3000], loss:0.1913
+iter [2850/3000], loss:0.1892
+iter [2907/3000], loss:0.2455
+iter [2964/3000], loss:0.1932
+Pixel Auroc:0.990, Sample Auroc:0.988, Pixel Aupro:0.936
+iter [3000/3000], loss:0.1886
+macaroni2
+train image number:900
+test image number:200
+iter [57/3000], loss:0.9012
+iter [114/3000], loss:0.5635
+iter [171/3000], loss:0.4320
+iter [228/3000], loss:0.3729
+Pixel Auroc:0.973, Sample Auroc:0.667, Pixel Aupro:0.927
+iter [285/3000], loss:0.3570
+iter [342/3000], loss:0.3532
+iter [399/3000], loss:0.3484
+iter [456/3000], loss:0.3391
+Pixel Auroc:0.983, Sample Auroc:0.775, Pixel Aupro:0.955
+iter [513/3000], loss:0.3324
+iter [570/3000], loss:0.3253
+iter [627/3000], loss:0.3211
+iter [684/3000], loss:0.3143
+iter [741/3000], loss:0.3060
+Pixel Auroc:0.986, Sample Auroc:0.826, Pixel Aupro:0.96
+iter [798/3000], loss:0.3003
+iter [855/3000], loss:0.3051
+iter [912/3000], loss:0.2946
+iter [969/3000], loss:0.2879
+Pixel Auroc:0.987, Sample Auroc:0.844, Pixel Aupro:0.962
+iter [1026/3000], loss:0.2865
+iter [1083/3000], loss:0.2803
+iter [1140/3000], loss:0.2761
+iter [1197/3000], loss:0.2730
+Pixel Auroc:0.987, Sample Auroc:0.864, Pixel Aupro:0.964
+iter [1254/3000], loss:0.2698
+iter [1311/3000], loss:0.2668
+iter [1368/3000], loss:0.2817
+iter [1425/3000], loss:0.2647
+iter [1482/3000], loss:0.2604
+Pixel Auroc:0.988, Sample Auroc:0.875, Pixel Aupro:0.966
+iter [1539/3000], loss:0.2607
+iter [1596/3000], loss:0.2565
+iter [1653/3000], loss:0.2567
+iter [1710/3000], loss:0.2514
+Pixel Auroc:0.988, Sample Auroc:0.889, Pixel Aupro:0.968
+iter [1767/3000], loss:0.2508
+iter [1824/3000], loss:0.2536
+iter [1881/3000], loss:0.2466
+iter [1938/3000], loss:0.2429
+iter [1995/3000], loss:0.2419
+Pixel Auroc:0.989, Sample Auroc:0.895, Pixel Aupro:0.969
+iter [2052/3000], loss:0.2415
+iter [2109/3000], loss:0.2382
+iter [2166/3000], loss:0.2362
+iter [2223/3000], loss:0.2373
+Pixel Auroc:0.989, Sample Auroc:0.907, Pixel Aupro:0.97
+iter [2280/3000], loss:0.2367
+iter [2337/3000], loss:0.2328
+iter [2394/3000], loss:0.2341
+iter [2451/3000], loss:0.2301
+Pixel Auroc:0.989, Sample Auroc:0.905, Pixel Aupro:0.97
+iter [2508/3000], loss:0.2292
+iter [2565/3000], loss:0.2305
+iter [2622/3000], loss:0.2555
+iter [2679/3000], loss:0.2294
+iter [2736/3000], loss:0.2245
+Pixel Auroc:0.989, Sample Auroc:0.913, Pixel Aupro:0.971
+iter [2793/3000], loss:0.2220
+iter [2850/3000], loss:0.2204
+iter [2907/3000], loss:0.2199
+iter [2964/3000], loss:0.2201
+Pixel Auroc:0.990, Sample Auroc:0.918, Pixel Aupro:0.974
+iter [3000/3000], loss:0.2550
+pcb1
+train image number:904
+test image number:200
+iter [57/3000], loss:0.8554
+iter [114/3000], loss:0.4794
+iter [171/3000], loss:0.3623
+iter [228/3000], loss:0.3161
+Pixel Auroc:0.995, Sample Auroc:0.891, Pixel Aupro:0.943
+iter [285/3000], loss:0.2992
+iter [342/3000], loss:0.2990
+iter [399/3000], loss:0.2949
+iter [456/3000], loss:0.2920
+Pixel Auroc:0.997, Sample Auroc:0.932, Pixel Aupro:0.957
+iter [513/3000], loss:0.2868
+iter [570/3000], loss:0.2838
+iter [627/3000], loss:0.2822
+iter [684/3000], loss:0.2769
+iter [741/3000], loss:0.2757
+Pixel Auroc:0.997, Sample Auroc:0.943, Pixel Aupro:0.961
+iter [798/3000], loss:0.2745
+iter [855/3000], loss:0.2713
+iter [912/3000], loss:0.2685
+iter [969/3000], loss:0.2633
+Pixel Auroc:0.997, Sample Auroc:0.951, Pixel Aupro:0.961
+iter [1026/3000], loss:0.2591
+iter [1083/3000], loss:0.2563
+iter [1140/3000], loss:0.2546
+iter [1197/3000], loss:0.2502
+Pixel Auroc:0.997, Sample Auroc:0.961, Pixel Aupro:0.961
+iter [1254/3000], loss:0.2473
+iter [1311/3000], loss:0.2711
+iter [1368/3000], loss:0.2688
+iter [1425/3000], loss:0.2491
+iter [1482/3000], loss:0.2424
+Pixel Auroc:0.997, Sample Auroc:0.964, Pixel Aupro:0.961
+iter [1539/3000], loss:0.2399
+iter [1596/3000], loss:0.2336
+iter [1653/3000], loss:0.2313
+iter [1710/3000], loss:0.2296
+Pixel Auroc:0.998, Sample Auroc:0.968, Pixel Aupro:0.963
+iter [1767/3000], loss:0.2284
+iter [1824/3000], loss:0.2249
+iter [1881/3000], loss:0.2231
+iter [1938/3000], loss:0.2229
+iter [1995/3000], loss:0.2192
+Pixel Auroc:0.998, Sample Auroc:0.971, Pixel Aupro:0.963
+iter [2052/3000], loss:0.2405
+iter [2109/3000], loss:0.2295
+iter [2166/3000], loss:0.2160
+iter [2223/3000], loss:0.2110
+Pixel Auroc:0.998, Sample Auroc:0.976, Pixel Aupro:0.961
+iter [2280/3000], loss:0.2099
+iter [2337/3000], loss:0.2086
+iter [2394/3000], loss:0.2093
+iter [2451/3000], loss:0.2037
+Pixel Auroc:0.998, Sample Auroc:0.976, Pixel Aupro:0.965
+iter [2508/3000], loss:0.2026
+iter [2565/3000], loss:0.2021
+iter [2622/3000], loss:0.2013
+iter [2679/3000], loss:0.1997
+iter [2736/3000], loss:0.2626
+Pixel Auroc:0.997, Sample Auroc:0.976, Pixel Aupro:0.962
+iter [2793/3000], loss:0.2121
+iter [2850/3000], loss:0.2021
+iter [2907/3000], loss:0.1982
+iter [2964/3000], loss:0.1960
+Pixel Auroc:0.998, Sample Auroc:0.979, Pixel Aupro:0.968
+iter [3000/3000], loss:0.1958
+pcb2
+train image number:901
+test image number:200
+iter [57/3000], loss:0.9816
+iter [114/3000], loss:0.6998
+iter [171/3000], loss:0.5330
+iter [228/3000], loss:0.4421
+Pixel Auroc:0.982, Sample Auroc:0.875, Pixel Aupro:0.884
+iter [285/3000], loss:0.4171
+iter [342/3000], loss:0.4155
+iter [399/3000], loss:0.4137
+iter [456/3000], loss:0.4078
+Pixel Auroc:0.980, Sample Auroc:0.895, Pixel Aupro:0.866
+iter [513/3000], loss:0.4009
+iter [570/3000], loss:0.4045
+iter [627/3000], loss:0.3940
+iter [684/3000], loss:0.3889
+iter [741/3000], loss:0.3866
+Pixel Auroc:0.982, Sample Auroc:0.928, Pixel Aupro:0.88
+iter [798/3000], loss:0.3807
+iter [855/3000], loss:0.3757
+iter [912/3000], loss:0.3739
+iter [969/3000], loss:0.3767
+Pixel Auroc:0.983, Sample Auroc:0.941, Pixel Aupro:0.881
+iter [1026/3000], loss:0.3707
+iter [1083/3000], loss:0.3632
+iter [1140/3000], loss:0.3594
+iter [1197/3000], loss:0.3744
+Pixel Auroc:0.984, Sample Auroc:0.946, Pixel Aupro:0.885
+iter [1254/3000], loss:0.3567
+iter [1311/3000], loss:0.3493
+iter [1368/3000], loss:0.3526
+iter [1425/3000], loss:0.3464
+iter [1482/3000], loss:0.3449
+Pixel Auroc:0.988, Sample Auroc:0.966, Pixel Aupro:0.907
+iter [1539/3000], loss:0.3460
+iter [1596/3000], loss:0.3362
+iter [1653/3000], loss:0.3324
+iter [1710/3000], loss:0.3691
+Pixel Auroc:0.986, Sample Auroc:0.960, Pixel Aupro:0.899
+iter [1767/3000], loss:0.3383
+iter [1824/3000], loss:0.3258
+iter [1881/3000], loss:0.3340
+iter [1938/3000], loss:0.3250
+iter [1995/3000], loss:0.3233
+Pixel Auroc:0.987, Sample Auroc:0.971, Pixel Aupro:0.907
+iter [2052/3000], loss:0.3195
+iter [2109/3000], loss:0.3217
+iter [2166/3000], loss:0.3149
+iter [2223/3000], loss:0.3163
+Pixel Auroc:0.987, Sample Auroc:0.971, Pixel Aupro:0.906
+iter [2280/3000], loss:0.3049
+iter [2337/3000], loss:0.3053
+iter [2394/3000], loss:0.3032
+iter [2451/3000], loss:0.3028
+Pixel Auroc:0.988, Sample Auroc:0.973, Pixel Aupro:0.908
+iter [2508/3000], loss:0.3014
+iter [2565/3000], loss:0.3017
+iter [2622/3000], loss:0.2953
+iter [2679/3000], loss:0.2927
+iter [2736/3000], loss:0.2949
+Pixel Auroc:0.988, Sample Auroc:0.975, Pixel Aupro:0.912
+iter [2793/3000], loss:0.2843
+iter [2850/3000], loss:0.2885
+iter [2907/3000], loss:0.2917
+iter [2964/3000], loss:0.2815
+Pixel Auroc:0.990, Sample Auroc:0.978, Pixel Aupro:0.925
+iter [3000/3000], loss:0.2933
+pcb3
+train image number:905
+test image number:201
+iter [57/3000], loss:0.9154
+iter [114/3000], loss:0.5906
+iter [171/3000], loss:0.4455
+iter [228/3000], loss:0.3774
+Pixel Auroc:0.983, Sample Auroc:0.836, Pixel Aupro:0.902
+iter [285/3000], loss:0.3640
+iter [342/3000], loss:0.3637
+iter [399/3000], loss:0.3590
+iter [456/3000], loss:0.3481
+Pixel Auroc:0.986, Sample Auroc:0.934, Pixel Aupro:0.923
+iter [513/3000], loss:0.3430
+iter [570/3000], loss:0.3331
+iter [627/3000], loss:0.3291
+iter [684/3000], loss:0.3170
+iter [741/3000], loss:0.3137
+Pixel Auroc:0.987, Sample Auroc:0.949, Pixel Aupro:0.929
+iter [798/3000], loss:0.3103
+iter [855/3000], loss:0.3041
+iter [912/3000], loss:0.2997
+iter [969/3000], loss:0.2949
+Pixel Auroc:0.988, Sample Auroc:0.956, Pixel Aupro:0.936
+iter [1026/3000], loss:0.2918
+iter [1083/3000], loss:0.2885
+iter [1140/3000], loss:0.2845
+iter [1197/3000], loss:0.2815
+Pixel Auroc:0.988, Sample Auroc:0.965, Pixel Aupro:0.936
+iter [1254/3000], loss:0.2774
+iter [1311/3000], loss:0.2787
+iter [1368/3000], loss:0.2743
+iter [1425/3000], loss:0.2708
+iter [1482/3000], loss:0.2683
+Pixel Auroc:0.988, Sample Auroc:0.968, Pixel Aupro:0.939
+iter [1539/3000], loss:0.2666
+iter [1596/3000], loss:0.2645
+iter [1653/3000], loss:0.2619
+iter [1710/3000], loss:0.2598
+Pixel Auroc:0.989, Sample Auroc:0.975, Pixel Aupro:0.94
+iter [1767/3000], loss:0.2561
+iter [1824/3000], loss:0.2594
+iter [1881/3000], loss:0.2543
+iter [1938/3000], loss:0.2537
+iter [1995/3000], loss:0.2515
+Pixel Auroc:0.989, Sample Auroc:0.974, Pixel Aupro:0.942
+iter [2052/3000], loss:0.2500
+iter [2109/3000], loss:0.2488
+iter [2166/3000], loss:0.2470
+iter [2223/3000], loss:0.2455
+Pixel Auroc:0.990, Sample Auroc:0.980, Pixel Aupro:0.949
+iter [2280/3000], loss:0.2487
+iter [2337/3000], loss:0.2463
+iter [2394/3000], loss:0.2451
+iter [2451/3000], loss:0.2421
+Pixel Auroc:0.990, Sample Auroc:0.980, Pixel Aupro:0.946
+iter [2508/3000], loss:0.2455
+iter [2565/3000], loss:0.2417
+iter [2622/3000], loss:0.2376
+iter [2679/3000], loss:0.2377
+iter [2736/3000], loss:0.2441
+Pixel Auroc:0.990, Sample Auroc:0.982, Pixel Aupro:0.944
+iter [2793/3000], loss:0.2332
+iter [2850/3000], loss:0.2361
+iter [2907/3000], loss:0.2335
+iter [2964/3000], loss:0.2341
+Pixel Auroc:0.991, Sample Auroc:0.982, Pixel Aupro:0.951
+iter [3000/3000], loss:0.2320
+pcb4
+train image number:904
+test image number:201
+iter [57/3000], loss:0.9547
+iter [114/3000], loss:0.6470
+iter [171/3000], loss:0.4871
+iter [228/3000], loss:0.4114
+Pixel Auroc:0.984, Sample Auroc:0.989, Pixel Aupro:0.89
+iter [285/3000], loss:0.3884
+iter [342/3000], loss:0.3809
+iter [399/3000], loss:0.3767
+iter [456/3000], loss:0.3743
+Pixel Auroc:0.986, Sample Auroc:0.986, Pixel Aupro:0.903
+iter [513/3000], loss:0.3716
+iter [570/3000], loss:0.3679
+iter [627/3000], loss:0.3672
+iter [684/3000], loss:0.3624
+iter [741/3000], loss:0.3620
+Pixel Auroc:0.986, Sample Auroc:0.988, Pixel Aupro:0.906
+iter [798/3000], loss:0.3586
+iter [855/3000], loss:0.3566
+iter [912/3000], loss:0.3742
+iter [969/3000], loss:0.3677
+Pixel Auroc:0.987, Sample Auroc:0.993, Pixel Aupro:0.91
+iter [1026/3000], loss:0.3532
+iter [1083/3000], loss:0.3503
+iter [1140/3000], loss:0.3552
+iter [1197/3000], loss:0.3461
+Pixel Auroc:0.988, Sample Auroc:0.995, Pixel Aupro:0.913
+iter [1254/3000], loss:0.3443
+iter [1311/3000], loss:0.3484
+iter [1368/3000], loss:0.3395
+iter [1425/3000], loss:0.3378
+iter [1482/3000], loss:0.3498
+Pixel Auroc:0.987, Sample Auroc:0.997, Pixel Aupro:0.911
+iter [1539/3000], loss:0.3307
+iter [1596/3000], loss:0.3285
+iter [1653/3000], loss:0.3264
+iter [1710/3000], loss:0.3240
+Pixel Auroc:0.989, Sample Auroc:0.996, Pixel Aupro:0.917
+iter [1767/3000], loss:0.3228
+iter [1824/3000], loss:0.3177
+iter [1881/3000], loss:0.3164
+iter [1938/3000], loss:0.3143
+iter [1995/3000], loss:0.3102
+Pixel Auroc:0.988, Sample Auroc:0.997, Pixel Aupro:0.918
+iter [2052/3000], loss:0.3059
+iter [2109/3000], loss:0.3123
+iter [2166/3000], loss:0.2979
+iter [2223/3000], loss:0.2965
+Pixel Auroc:0.989, Sample Auroc:0.998, Pixel Aupro:0.919
+iter [2280/3000], loss:0.3027
+iter [2337/3000], loss:0.2931
+iter [2394/3000], loss:0.2895
+iter [2451/3000], loss:0.2880
+Pixel Auroc:0.987, Sample Auroc:0.998, Pixel Aupro:0.911
+iter [2508/3000], loss:0.2964
+iter [2565/3000], loss:0.2864
+iter [2622/3000], loss:0.2797
+iter [2679/3000], loss:0.2847
+iter [2736/3000], loss:0.2772
+Pixel Auroc:0.989, Sample Auroc:0.998, Pixel Aupro:0.922
+iter [2793/3000], loss:0.2819
+iter [2850/3000], loss:0.2780
+iter [2907/3000], loss:0.2706
+iter [2964/3000], loss:0.2702
+Pixel Auroc:0.987, Sample Auroc:0.998, Pixel Aupro:0.913
+iter [3000/3000], loss:0.2857
+pipe_fryum
+train image number:450
+test image number:150
+iter [29/3000], loss:0.9987
+iter [58/3000], loss:0.6852
+iter [87/3000], loss:0.5931
+iter [116/3000], loss:0.5161
+iter [145/3000], loss:0.4604
+iter [174/3000], loss:0.4296
+iter [203/3000], loss:0.4151
+iter [232/3000], loss:0.4137
+Pixel Auroc:0.977, Sample Auroc:0.914, Pixel Aupro:0.933
+iter [261/3000], loss:0.4160
+iter [290/3000], loss:0.4200
+iter [319/3000], loss:0.4269
+iter [348/3000], loss:0.4282
+iter [377/3000], loss:0.4278
+iter [406/3000], loss:0.4269
+iter [435/3000], loss:0.4261
+iter [464/3000], loss:0.4274
+iter [493/3000], loss:0.4279
+Pixel Auroc:0.982, Sample Auroc:0.987, Pixel Aupro:0.946
+iter [522/3000], loss:0.4266
+iter [551/3000], loss:0.4205
+iter [580/3000], loss:0.4168
+iter [609/3000], loss:0.4134
+iter [638/3000], loss:0.4116
+iter [667/3000], loss:0.4125
+iter [696/3000], loss:0.4073
+iter [725/3000], loss:0.4062
+Pixel Auroc:0.985, Sample Auroc:0.996, Pixel Aupro:0.953
+iter [754/3000], loss:0.4022
+iter [783/3000], loss:0.4048
+iter [812/3000], loss:0.4009
+iter [841/3000], loss:0.3997
+iter [870/3000], loss:0.3940
+iter [899/3000], loss:0.3895
+iter [928/3000], loss:0.3903
+iter [957/3000], loss:0.3856
+iter [986/3000], loss:0.3850
+Pixel Auroc:0.984, Sample Auroc:0.997, Pixel Aupro:0.954
+iter [1015/3000], loss:0.3832
+iter [1044/3000], loss:0.3832
+iter [1073/3000], loss:0.3857
+iter [1102/3000], loss:0.3795
+iter [1131/3000], loss:0.3753
+iter [1160/3000], loss:0.3722
+iter [1189/3000], loss:0.3716
+iter [1218/3000], loss:0.3717
+iter [1247/3000], loss:0.3658
+Pixel Auroc:0.985, Sample Auroc:0.998, Pixel Aupro:0.958
+iter [1276/3000], loss:0.3641
+iter [1305/3000], loss:0.3640
+iter [1334/3000], loss:0.3663
+iter [1363/3000], loss:0.3623
+iter [1392/3000], loss:0.3599
+iter [1421/3000], loss:0.3567
+iter [1450/3000], loss:0.3563
+iter [1479/3000], loss:0.3545
+Pixel Auroc:0.985, Sample Auroc:0.998, Pixel Aupro:0.957
+iter [1508/3000], loss:0.3533
+iter [1537/3000], loss:0.3540
+iter [1566/3000], loss:0.3581
+iter [1595/3000], loss:0.3564
+iter [1624/3000], loss:0.3534
+iter [1653/3000], loss:0.3455
+iter [1682/3000], loss:0.3431
+iter [1711/3000], loss:0.3421
+iter [1740/3000], loss:0.3431
+Pixel Auroc:0.984, Sample Auroc:0.999, Pixel Aupro:0.957
+iter [1769/3000], loss:0.3433
+iter [1798/3000], loss:0.3397
+iter [1827/3000], loss:0.3392
+iter [1856/3000], loss:0.3376
+iter [1885/3000], loss:0.3379
+iter [1914/3000], loss:0.3368
+iter [1943/3000], loss:0.3331
+iter [1972/3000], loss:0.3351
+Pixel Auroc:0.984, Sample Auroc:0.999, Pixel Aupro:0.956
+iter [2001/3000], loss:0.3336
+iter [2030/3000], loss:0.3450
+iter [2059/3000], loss:0.3301
+iter [2088/3000], loss:0.3279
+iter [2117/3000], loss:0.3255
+iter [2146/3000], loss:0.3291
+iter [2175/3000], loss:0.3247
+iter [2204/3000], loss:0.3209
+iter [2233/3000], loss:0.3204
+Pixel Auroc:0.984, Sample Auroc:1.000, Pixel Aupro:0.957
+iter [2262/3000], loss:0.3234
+iter [2291/3000], loss:0.3242
+iter [2320/3000], loss:0.3183
+iter [2349/3000], loss:0.3176
+iter [2378/3000], loss:0.3177
+iter [2407/3000], loss:0.3135
+iter [2436/3000], loss:0.3132
+iter [2465/3000], loss:0.3122
+iter [2494/3000], loss:0.3103
+Pixel Auroc:0.986, Sample Auroc:0.999, Pixel Aupro:0.958
+iter [2523/3000], loss:0.3111
+iter [2552/3000], loss:0.3072
+iter [2581/3000], loss:0.3081
+iter [2610/3000], loss:0.3058
+iter [2639/3000], loss:0.3041
+iter [2668/3000], loss:0.3042
+iter [2697/3000], loss:0.3081
+iter [2726/3000], loss:0.3043
+Pixel Auroc:0.984, Sample Auroc:1.000, Pixel Aupro:0.956
+iter [2755/3000], loss:0.3052
+iter [2784/3000], loss:0.3019
+iter [2813/3000], loss:0.3045
+iter [2842/3000], loss:0.3004
+iter [2871/3000], loss:0.2981
+iter [2900/3000], loss:0.2963
+iter [2929/3000], loss:0.3024
+iter [2958/3000], loss:0.2942
+iter [2987/3000], loss:0.3059
+Pixel Auroc:0.983, Sample Auroc:1.000, Pixel Aupro:0.956
+iter [3000/3000], loss:0.2982
+[['candle', 0.9915, 0.972, 0.9477], ['capsules', 0.9946, 0.9355, 0.9445], ['cashew', 0.9741, 0.9814, 0.9428], ['chewinggum', 0.9763, 0.9928, 0.8663], ['fryum', 0.9196, 0.9756, 0.7911], ['macaroni1', 0.9901, 0.9884, 0.9363], ['macaroni2', 0.9904, 0.9179, 0.9736], ['pcb1', 0.9979, 0.9786, 0.9676], ['pcb2', 0.9899, 0.9784, 0.9247], ['pcb3', 0.9905, 0.9818, 0.9514], ['pcb4', 0.987, 0.9982, 0.9129], ['pipe_fryum', 0.983, 0.9996, 0.9557]]
+mPixel Auroc:0.9821, mSample Auroc:0.9750, mPixel Aupro:0.9262
+[['candle', 0.9911, 0.9745, 0.9492], ['capsules', 0.9954, 0.9417, 0.9624], ['cashew', 0.9741, 0.9814, 0.9428], ['chewinggum', 0.9763, 0.9928, 0.8663], ['fryum', 0.9192, 0.9774, 0.7812], ['macaroni1', 0.9901, 0.9884, 0.9363], ['macaroni2', 0.9904, 0.9179, 0.9736], ['pcb1', 0.9979, 0.9786, 0.9676], ['pcb2', 0.9899, 0.9784, 0.9247], ['pcb3', 0.9905, 0.9818, 0.9514], ['pcb4', 0.987, 0.9982, 0.9129], ['pipe_fryum', 0.984, 0.9998, 0.9564]]
+bPixel Auroc:0.9822, bSample Auroc:0.9759, bPixel Aupro:0.9271
