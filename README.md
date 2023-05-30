@@ -1,7 +1,7 @@
 # ReContrast
 
 Official PyTorch Implementation of
-"ReContrast: Embed Contrastive Learning in Feature Reconstruction for Domain-Specific Unsupervised Anomaly Detection".
+"ReContrast: Domain-Specific Anomaly Detection via Contrastive Reconstruction".
 Under Review.
 
 ## 1. Environments
