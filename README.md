@@ -2,7 +2,7 @@
 
 Official PyTorch Implementation of
 "ReContrast: Domain-Specific Anomaly Detection via Contrastive Reconstruction".
-Under Review.
+Under Review. [paper](https://arxiv.org/abs/2306.02602)
 
 ## 1. Environments
 
