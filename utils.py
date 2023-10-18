@@ -150,7 +150,18 @@ def specificity_score(y_true, y_score):
     return TN / N
 
 
-def evaluation(model, dataloader, device, _class_=None, calc_pro=True):
+def evaluation(model, dataloader, device, _class_=None, calc_pro=True, max_ratio=0):
+    """
+
+    :param model:
+    :param dataloader:
+    :param device:
+    :param _class_:
+    :param calc_pro:
+    :param max_ratio: if 0, use the max value of anomaly map as the image anomaly score.
+     if 0.1, use the mean of max 10% anomaly map value, etc.
+    :return:
+    """
     model.eval()
     gt_list_px = []
     pr_list_px = []
@@ -174,10 +185,18 @@ def evaluation(model, dataloader, device, _class_=None, calc_pro=True):
                 if label.item() != 0:
                     aupro_list.append(compute_pro(gt.squeeze(0).cpu().numpy().astype(int),
                                                   anomaly_map[np.newaxis, :, :]))
+
+            if max_ratio <= 0:
+                sp_score = anomaly_map.max()
+            else:
+                anomaly_map = anomaly_map.ravel()
+                sp_score = np.sort(anomaly_map)[-int(anomaly_map.shape[0] * max_ratio):]
+                sp_score = sp_score.mean()
+
             gt_list_px.extend(gt.cpu().numpy().astype(int).ravel())
             pr_list_px.extend(anomaly_map.ravel())
             gt_list_sp.append(np.max(gt.cpu().numpy().astype(int)))
-            pr_list_sp.append(np.max(anomaly_map))
+            pr_list_sp.append(sp_score)
 
         auroc_px = round(roc_auc_score(gt_list_px, pr_list_px), 4)
         auroc_sp = round(roc_auc_score(gt_list_sp, pr_list_sp), 4)
@@ -415,65 +434,3 @@ def compute_pro(masks: ndarray, amaps: ndarray, num_th: int = 200) -> None:
     pro_auc = auc(df["fpr"], df["pro"])
     return pro_auc
 
-
-class SAM(torch.optim.Optimizer):
-    def __init__(self, params, base_optimizer, rho=-0.05, adaptive=False, **kwargs):
-        assert rho <= 0.0, f"Invalid rho, should be negative: {rho}"
-
-        defaults = dict(rho=rho, adaptive=adaptive, **kwargs)
-        super(SAM, self).__init__(params, defaults)
-
-        self.base_optimizer = base_optimizer(self.param_groups, **kwargs)
-        self.param_groups = self.base_optimizer.param_groups
-        self.defaults.update(self.base_optimizer.defaults)
-
-    @torch.no_grad()
-    def first_step(self, zero_grad=False):
-        grad_norm = self._grad_norm()
-        for group in self.param_groups:
-            scale = group["rho"] / (grad_norm + 1e-12)
-
-            for p in group["params"]:
-                if p.grad is None: continue
-                self.state[p]["old_p"] = p.data.clone()
-                e_w = (torch.pow(p, 2) if group["adaptive"] else 1.0) * p.grad * scale.to(p)
-                p.add_(e_w)  # climb to the local maximum "w + e(w)"
-
-        if zero_grad: self.zero_grad()
-
-    @torch.no_grad()
-    def second_step(self, zero_grad=False):
-        for group in self.param_groups:
-            for p in group["params"]:
-                if p.grad is None: continue
-                p.data = self.state[p]["old_p"]  # get back to "w" from "w + e(w)"
-
-        self.base_optimizer.step()  # do the actual "sharpness-aware" update
-
-        if zero_grad: self.zero_grad()
-
-    @torch.no_grad()
-    def step(self, closure=None):
-        assert closure is not None, "Sharpness Aware Minimization requires closure, but it was not provided"
-        closure = torch.enable_grad()(closure)  # the closure should do a full forward-backward pass
-
-        self.first_step(zero_grad=True)
-        closure()
-        self.second_step()
-
-    def _grad_norm(self):
-        shared_device = self.param_groups[0]["params"][
-            0].device  # put everything on the same device, in case of model parallelism
-        norm = torch.norm(
-            torch.stack([
-                ((torch.abs(p) if group["adaptive"] else 1.0) * p.grad).norm(p=2).to(shared_device)
-                for group in self.param_groups for p in group["params"]
-                if p.grad is not None
-            ]),
-            p=2
-        )
-        return norm
-
-    def load_state_dict(self, state_dict):
-        super().load_state_dict(state_dict)
-        self.base_optimizer.param_groups = self.param_groups

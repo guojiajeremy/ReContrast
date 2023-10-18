@@ -2,7 +2,8 @@
 
 Official PyTorch Implementation of
 "ReContrast: Domain-Specific Anomaly Detection via Contrastive Reconstruction".
-Under Review.
+
+NeurIPS 2023. [arxiv](https://arxiv.org/abs/2306.02602)
 
 ## 1. Environments
 
@@ -161,4 +162,24 @@ python recontrast_oct.py
 ISIC2018
 ```
 python recontrast_isic.py
+```
+
+### Stable Training
+
+Our method (as well as many other UAD methods) suffers from some extent of training instability due to optimizer and batchnorm (BN) related issue,
+as discussed in Appendix E. By default, the BN layers of encoder
+are set to train mode during training. Because training instability and performance drop are observed
+for some categories, the BN of encoder is set to eval mode for such categories. (the choice of encoder BN mode
+and training loss spikes can be easily addressed by a validation set, which however is not allowed in UAD).
+
+We explore some tricks that enable training with more stability when set encoder BN to train mode for all categories, 
+which produces comparably good performances.
+1. In encoder, we use pre-trained running_var if the batch variance of a BN channel is lower than min(5e-4, running_var)
+2. We reset the decoder Adam optimizer every 500 iterations to clear historical first-order and second-order gradient.
+
+```
+python recontrast_mvtec_stable.py
+```
+```
+python recontrast_visa_stable.py
 ```
