@@ -58,7 +58,7 @@ python ./prepare_data/prepare_visa.py --split-type 1cls --data-folder ../VisA --
         |-- capsules
         |-- ....
 ```
-
+ 
 ### OCT2017
 Creat a new directory `../OCT2017`. Download ZhangLabData form [URL](https://data.mendeley.com/datasets/rscbjbr9sj/3).
 Unzip the file, and move everything in `ZhangLabData/CellData/OCT` to `../OCT2017/`. The directory should be like:
@@ -164,6 +164,16 @@ ISIC2018
 python recontrast_isic.py
 ```
 
+### Model-Unifed Multi-Class Setting
+Following the setting proposed by UniAD, we train an unifed model for all classes of each dataset (15 classes for MVTec AD, 12 classes for VIsA).
+
+```
+python recontrast_mvtec_multiclass.py
+```
+```
+python recontrast_visa_multiclass.py
+```
+
 ### Stable Training
 
 Our method (as well as many other UAD methods) suffers from some extent of training instability due to optimizer and batchnorm (BN) related issue,
@@ -183,3 +193,6 @@ python recontrast_mvtec_stable.py
 ```
 python recontrast_visa_stable.py
 ```
+
+### Acknowledgement
+Many thanks to [RD4AD](https://github.com/hq-deng/RD4AD), for their easy-to-read code base.

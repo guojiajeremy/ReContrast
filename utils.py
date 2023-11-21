@@ -5,7 +5,7 @@ import numpy as np
 from torch.utils.data import DataLoader
 from dataset import MVTecDataset
 from torch.nn import functional as F
-from sklearn.metrics import roc_auc_score, f1_score, recall_score, accuracy_score, precision_recall_curve
+from sklearn.metrics import roc_auc_score, f1_score, average_precision_score, accuracy_score, precision_recall_curve
 import cv2
 import matplotlib.pyplot as plt
 from sklearn.metrics import auc
@@ -16,7 +16,7 @@ from statistics import mean
 from scipy.ndimage import gaussian_filter, binary_dilation
 import os
 from functools import partial
-
+import math
 from sklearn import manifold
 from matplotlib.ticker import NullFormatter
 from scipy.spatial.distance import pdist
@@ -97,20 +97,19 @@ def cal_anomaly_map(fs_list, ft_list, out_size=224, amap_mode='mul', log=False):
     return anomaly_map, a_map_list
 
 
-def cal_anomaly_map_v2(fs_list, ft_list, out_size=224, amap_mode='add'):
+def cal_anomaly_maps(fs_list, ft_list, out_size=224):
+    if not isinstance(out_size, tuple):
+        out_size = (out_size, out_size)
+
     a_map_list = []
     for i in range(len(ft_list)):
         fs = fs_list[i]
         ft = ft_list[i]
         a_map = 1 - F.cosine_similarity(fs, ft)
         a_map = torch.unsqueeze(a_map, dim=1)
-        a_map = F.interpolate(a_map, size=out_size // 4, mode='bilinear', align_corners=False)
+        a_map = F.interpolate(a_map, size=out_size, mode='bilinear', align_corners=True)
         a_map_list.append(a_map)
-
-    anomaly_map = torch.stack(a_map_list, dim=-1).sum(-1)
-    anomaly_map = F.interpolate(anomaly_map, size=out_size, mode='bilinear', align_corners=False)
-    anomaly_map = anomaly_map[0, 0, :, :].to('cpu').detach().numpy()
-
+    anomaly_map = torch.cat(a_map_list, dim=1).mean(dim=1, keepdim=True)
     return anomaly_map, a_map_list
 
 
@@ -202,6 +201,59 @@ def evaluation(model, dataloader, device, _class_=None, calc_pro=True, max_ratio
         auroc_sp = round(roc_auc_score(gt_list_sp, pr_list_sp), 4)
 
     return auroc_px, auroc_sp, round(np.mean(aupro_list), 4)
+
+
+def evaluation_batch(model, dataloader, device, _class_=None, reg_calib=False, max_ratio=0):
+    model.eval()
+    gt_list_px = []
+    pr_list_px = []
+    gt_list_sp = []
+    pr_list_sp = []
+    gaussian_kernel = get_gaussian_kernel(kernel_size=5, sigma=4).to(device)
+
+    with torch.no_grad():
+        for img, gt, label, cls in dataloader:
+            img = img.to(device)
+            if reg_calib:
+                if hasattr(model, 'require_cls'):
+                    output = model(img, cls)
+                else:
+                    output = model(img)
+                en, de, reg = output[0], output[1], output[2]
+            else:
+                output = model(img)
+                en, de = output[0], output[1]
+
+            anomaly_map, _ = cal_anomaly_maps(en, de, img.shape[-1])
+
+            if reg_calib:
+                reg_mean = reg[:, 0].view(-1, 1, 1, 1)
+                reg_max = reg[:, 1].view(-1, 1, 1, 1)
+                anomaly_map = (anomaly_map - reg_mean) / (reg_max - reg_mean)
+                # anomaly_map = (anomaly_map - reg_max) / (reg_max - reg_mean)
+
+            anomaly_map = gaussian_kernel(anomaly_map)
+
+            gt = gt.bool()
+
+            gt_list_px.extend(gt.cpu().numpy().astype(int).ravel())
+            pr_list_px.extend(anomaly_map.cpu().numpy().ravel())
+            gt_list_sp.extend(label.cpu().numpy().astype(int))
+
+            if max_ratio == 0:
+                sp_score = torch.max(anomaly_map.flatten(1), dim=1)[0].cpu().numpy()
+            else:
+                anomaly_map = anomaly_map.flatten(1)
+                sp_score = torch.sort(anomaly_map, dim=1, descending=True)[0][:, :int(anomaly_map.shape[1] * max_ratio)]
+                sp_score = sp_score.mean(dim=1).cpu().numpy()
+            pr_list_sp.extend(sp_score)
+
+        auroc_px = round(roc_auc_score(gt_list_px, pr_list_px), 4)
+        auroc_sp = round(roc_auc_score(gt_list_sp, pr_list_sp), 4)
+        ap_px = round(average_precision_score(gt_list_px, pr_list_px), 4)
+        ap_sp = round(average_precision_score(gt_list_sp, pr_list_sp), 4)
+
+    return auroc_px, auroc_sp, ap_px, ap_sp
 
 
 def evaluation_loco(model, dataloader, device, _class_=None, calc_pro=True):
@@ -434,3 +486,49 @@ def compute_pro(masks: ndarray, amaps: ndarray, num_th: int = 200) -> None:
     pro_auc = auc(df["fpr"], df["pro"])
     return pro_auc
 
+
+def get_gaussian_kernel(kernel_size=3, sigma=2, channels=1):
+    # Create a x, y coordinate grid of shape (kernel_size, kernel_size, 2)
+    x_coord = torch.arange(kernel_size)
+    x_grid = x_coord.repeat(kernel_size).view(kernel_size, kernel_size)
+    y_grid = x_grid.t()
+    xy_grid = torch.stack([x_grid, y_grid], dim=-1).float()
+
+    mean = (kernel_size - 1) / 2.
+    variance = sigma ** 2.
+
+    # Calculate the 2-dimensional gaussian kernel which is
+    # the product of two gaussian distributions for two different
+    # variables (in this case called x and y)
+    gaussian_kernel = (1. / (2. * math.pi * variance)) * \
+                      torch.exp(
+                          -torch.sum((xy_grid - mean) ** 2., dim=-1) / \
+                          (2 * variance)
+                      )
+
+    # Make sure sum of values in gaussian kernel equals 1.
+    gaussian_kernel = gaussian_kernel / torch.sum(gaussian_kernel)
+
+    # Reshape to 2d depthwise convolutional weight
+    gaussian_kernel = gaussian_kernel.view(1, 1, kernel_size, kernel_size)
+    gaussian_kernel = gaussian_kernel.repeat(channels, 1, 1, 1)
+
+    gaussian_filter = torch.nn.Conv2d(in_channels=channels, out_channels=channels, kernel_size=kernel_size,
+                                      groups=channels,
+                                      bias=False, padding=kernel_size // 2)
+
+    gaussian_filter.weight.data = gaussian_kernel
+    gaussian_filter.weight.requires_grad = False
+
+    return gaussian_filter
+
+
+def replace_layers(model, old, new):
+    for n, module in model.named_children():
+        if len(list(module.children())) > 0:
+            ## compound module, go inside it
+            replace_layers(module, old, new)
+
+        if isinstance(module, old):
+            ## simple module
+            setattr(model, n, new)
