@@ -108,7 +108,7 @@ def train(item_list):
 
     optimizer = torch.optim.AdamW([{'params': decoder.parameters()}, {'params': bn.parameters()},
                                    {'params': encoder.parameters(), 'lr': 1e-5}],
-                                  lr=2e-3, betas=(0.9, 0.999), weight_decay=1e-5, eps=1e-8)
+                                  lr=2e-3, betas=(0.9, 0.999), weight_decay=1e-5, eps=1e-10, amsgrad=True)
     lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[int(total_iters * 0.8)], gamma=0.2)
 
     print_fn('train image number:{}'.format(len(train_data)))
@@ -158,7 +158,6 @@ def train(item_list):
                                                                                                np.mean(ap_sp_list)))
 
                 model.train(encoder_bn_train=False)
-
 
             it += 1
             if it == total_iters:
