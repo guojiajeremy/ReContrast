@@ -6,14 +6,11 @@ Official PyTorch Implementation of
 NeurIPS 2023. [paper](https://arxiv.org/abs/2306.02602) [proceddings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/228b9279ecf9bbafe582406850c57115-Abstract-Conference.html)
 
 ```
-@inproceedings{NEURIPS2023_228b9279,
+@inproceedings{guo2024recontrast,
  author = {Guo, Jia and lu, shuai and Jia, Lize and Zhang, Weihang and Li, Huiqi},
  booktitle = {Advances in Neural Information Processing Systems},
- editor = {A. Oh and T. Neumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
  pages = {10721--10740},
- publisher = {Curran Associates, Inc.},
  title = {ReContrast: Domain-Specific Anomaly Detection via Contrastive Reconstruction},
- url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/228b9279ecf9bbafe582406850c57115-Paper-Conference.pdf},
  volume = {36},
  year = {2023}
 }
