@@ -7,7 +7,7 @@ NeurIPS 2023. [paper](https://arxiv.org/abs/2306.02602) [proceddings](https://pr
 
 ```
 @inproceedings{guo2024recontrast,
- author = {Guo, Jia and lu, shuai and Jia, Lize and Zhang, Weihang and Li, Huiqi},
+ author = {Guo, Jia and Lu, Shuai and Jia, Lize and Zhang, Weihang and Li, Huiqi},
  booktitle = {Advances in Neural Information Processing Systems},
  pages = {10721--10740},
  title = {ReContrast: Domain-Specific Anomaly Detection via Contrastive Reconstruction},
